@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animal Book for Children</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+    .book {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+    }
+    .page {
+      flex: 0 0 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+      border: 10px solid #000;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .video-container {
+      height: 50%;
+      overflow: hidden;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .details {
+      height: 50%;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .details h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+    .scroll-box {
+      height: calc(100% - 40px);
+      overflow-y: auto;
+      margin-top: 10px;
+      padding-right: 10px;
+    }
+    .scroll-box p {
+      margin: 8px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <div class="page">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="https://www.youtube.com/watch?v=ja4GNdU2vYc" type="video/mp4" />
+        </video>
+      </div>
+      <div class="details">
+        <h2>Lion</h2>
+        <div class="scroll-box">
+          <p><strong>Type:</strong> Mammal</p>
+          <p><strong>Category:</strong> Carnivore</p>
+          <p><strong>Foods:</strong> Meat, Buffalo, Deer</p>
+          <p>The lion is known as the king of the jungle. It lives in groups called prides and is found mainly in Africa and a few parts of India. Lions use roars to communicate, and they rest up to 20 hours a day. They are apex predators and symbolize strength and courage in many cultures.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="https://www.youtube.com/watch?v=ja4GNdU2vYc" type="video/mp4" />
+        </video>
+      </div>
+      <div class="details">
+        <h2>Tiger</h2>
+        <div class="scroll-box">
+          <p><strong>Type:</strong> Mammal</p>
+          <p><strong>Category:</strong> Carnivore</p>
+          <p><strong>Foods:</strong> Deer, Wild Boar</p>
+          <p>The tiger is the national animal of India. It is known for its stripes and is an excellent swimmer. Tigers prefer forests with plenty of cover. They are solitary hunters and mark their territory with scent markings. Tigers can leap great distances and have powerful jaws for hunting.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="https://www.youtube.com/watch?v=ja4GNdU2vYc" type="video/mp4" />
+        </video>
+      </div>
+      <div class="details">
+        <h2>Elephant</h2>
+        <div class="scroll-box">
+          <p><strong>Type:</strong> Mammal</p>
+          <p><strong>Category:</strong> Herbivore</p>
+          <p><strong>Foods:</strong> Grass, Fruits, Bark</p>
+          <p>Elephants are the largest land animals on Earth. They use their trunk to drink water, grab things, and even greet each other. They live in herds and are very social. Elephants are intelligent and have strong memories. They play an important role in maintaining the ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
